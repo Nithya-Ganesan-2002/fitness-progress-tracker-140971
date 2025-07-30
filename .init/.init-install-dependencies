@@ -1,0 +1,4 @@
+{
+    "command": "npm install",
+    "working_directory": "/home/kavia/workspace/code-generation/fitness-progress-tracker-140971/fitness_tracker_frontend"
+}
