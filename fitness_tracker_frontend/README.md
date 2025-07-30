@@ -1,4 +1,23 @@
-# Lightweight React Template for KAVIA
+# Fitness Tracker Frontend (React)
+
+This is a modern fitness tracker dashboard React application. The codebase enables registration/login, workout & goal management, activity history, and charts. The layout uses a sidebar, header, and card-driven UI with the color palette: 
+- Primary: #1976d2
+- Secondary: #43a047
+- Accent: #ffb300
+
+## Key directories
+
+- `src/pages/` - main page components (`Dashboard.js`, `Workouts.js`, `Goals.js`, `History.js`, `Login.js`, `Register.js`)
+- `src/components/` - shared layout components (`Sidebar.js`, `Header.js`)
+- `src/contexts/AuthContext.js` - authentication state and API methods
+
+## Features
+* User registration and authentication
+* Add/edit/remove & view workouts
+* Set, monitor, and update fitness goals
+* History view of past activities
+* Progress and trends charts
+* Modern, light, responsive UI
 
 This project provides a minimal React template with a clean, modern UI and minimal dependencies.
 

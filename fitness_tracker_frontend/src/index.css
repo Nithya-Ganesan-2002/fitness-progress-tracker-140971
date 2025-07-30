@@ -1,13 +1,145 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', sans-serif;
+  background: var(--bg-primary, #fff);
+  color: var(--text-primary, #222);
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+input, select, textarea {
+  padding: 7px 8px;
+  font-size: 1em;
+  margin-top: 5px !important;
+  margin-bottom: 8px;
+  border: 1.5px solid var(--border-color, #e0e0e0);
+  border-radius: 6px;
+  transition: border-color 0.12s;
+}
+input:focus, select:focus, textarea:focus {
+  border-color: var(--primary, #1976d2);
+  outline: none;
+}
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 1px;
+  font-size: 0.97em;
+  font-weight: 600;
+}
+.btn-accent {
+  background: var(--accent, #ffb300);
+  border: none;
+  color: #222;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1em;
+}
+.btn-accent:hover { background: #ffc84a; }
+.btn-outline {
+  background: none;
+  border: 1.6px solid var(--primary, #1976d2);
+  color: var(--primary, #1976d2);
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-xs {
+  padding: 3.5px 10px;
+  font-size: 0.93em;
+  margin-right: 7px;
+  background: var(--secondary,#43a047);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+.btn-xs.btn-danger { background: #d32f2f; color: #fff; }
+.flex-gap {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.auth-center {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 70vh;
+}
+.error {
+  color: #d32f2f;
+  background: #ffeaea;
+  padding: 6px 10px;
+  margin-top: 6px;
+  border-radius: 6px;
+  font-size: 1em;
+}
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 28px;
+}
+.dash-stat {
+  text-align: left;
+}
+.dash-value {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--primary, #1976d2);
+}
+.dash-label {
+  font-size: 1.06em;
+  color: #666;
+  margin-bottom: 5px;
+}
+.workout-table {
+  width: 100%;
+  margin-top: 10px;
+  border-collapse: collapse;
+}
+.workout-table th, .workout-table td {
+  padding: 8px 9px;
+  font-size: 1em;
+  text-align: left;
+}
+.workout-table th {
+  color: var(--primary, #1976d2);
+  background: #eaeaea;
+  font-weight: 700;
+  letter-spacing: .7px;
+  border-bottom: 2px solid #d5d8ed;
+}
+.workout-table td {
+  border-bottom: 1px solid #f1f1f1;
+}
+.goal-progress-bar {
+  width: 110px;
+  background: #f3ede4;
+  border-radius: 12px;
+  display: flex;
+  height: 18px;
+  align-items: center;
+  position: relative;
+  margin-right: 2px;
+}
+.goal-progress-bar > div {
+  height: 100%;
+  border-radius: 12px;
+  transition: width 0.28s;
+}
+.goal-progress-label {
+  position: absolute;
+  right: 7px;
+  color: #2e2e2e;
+  font-size: 0.93em;
+  font-weight: bold;
+}
+@media (max-width: 700px) {
+  .dashboard-grid { grid-template-columns: 1fr; }
+  .workout-table th, .workout-table td { font-size: 0.97em; }
 }

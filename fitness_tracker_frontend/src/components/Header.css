@@ -1,0 +1,37 @@
+.page-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--bg-secondary, #f8f9fa);
+  border-bottom: 2px solid var(--primary, #1976d2);
+  padding: 1.2em 2em 1.2em 2em;
+  margin-left: 0;
+  min-height: 58px;
+}
+
+.page-title {
+  color: var(--accent, #ffb300);
+  font-weight: 700;
+  font-size: 2.1em;
+  margin: 0;
+  letter-spacing: 1.5px;
+}
+
+.header-profile {
+  font-size: 1.13em;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--primary, #1976d2);
+}
+
+.header-username {
+  background: #eaf6fd;
+  border-radius: 18px;
+  padding: 4px 13px;
+  color: var(--primary, #1976d2);
+  font-weight: 600;
+}
